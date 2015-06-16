@@ -1,0 +1,14 @@
+body{
+	background-color:#faeedd;
+	padding:25px;
+}
+h1{
+	color:#474b4e;
+	text-align:center;
+}
+.page-header
+{
+	padding-bottom:9px;
+	margin:40px 0 20px;
+	border-bottom:1px solid #eee;	
+}
