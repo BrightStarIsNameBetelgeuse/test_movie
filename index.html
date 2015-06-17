@@ -1,19 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<script src="js/lib/angular.js"></script>
-	<script>	
+	<script src="js/libs/angular.js"></script>
+	<script>
 		angular.module("myApp",[]);
-</script>
-<script src="js/controllers/movieController.js"></script>
+	</script>
+	<script src="js/controllers/movieController.js"></script>
     <title>Main Page</title>  
 </head>
-<body>
-	<div ng-controller="movieController">
-		
+<body ng-controller="movieController">
+	<h2>Список фильмов</h2>
+	<div class="main-form">
+		<div ng-repeat="item in list.items">
+			<p class="movie-item">{{item.movie}}, {{item.descr}}</p>
+			<a class="button" href="Edit.html">Редактировать</a>
+		</div>
 	</div>
 </body>
 </html>
