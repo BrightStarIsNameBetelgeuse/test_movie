@@ -1,7 +1,8 @@
+var myApp=angular.module('myApp');
 myApp.controller('movieListController', ['$scope', '$http',
     function ($scope, $http) {
 
-      var apiKey = '968cca12b1a8492036b1e1e05af57e3f';
+      var apiKey = '12f2472bab811be2f3b86a4d2aef8619';
       var popularMoviesEndpoint = "https://api.themoviedb.org/3/movie/popular";
       var page = 0;
 
