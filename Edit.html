@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="myApp">
 	<head lang="en">
 		<meta charset="UTF-8">
@@ -8,10 +8,23 @@
 		<script>
 			angular.module("myApp",[]);
 		</script>
-		
+		<script src="js/controllers/movieController.js"></script>
 		<title>Edit Page</title>  
 	</head>
-	<body>
-		
+	<body ng-controller="editMovieCtrl">
+		<div>
+			<p>Название фильма</p>
+			<input type="text" ng-model='myFactory.movie'></input>
+			<br/>
+			<p>Описание фильма</p>
+			<textarea ng-model='myFactory.descr'></textarea>
+			<br/>
+			<p>Актеры</p>
+			<textarea ng-model='myFactory.actors'></textarea>
+			<br/>
+			<a class="button" href="" ng-click='edit(myFactory.movie, myFactory.descr, myFactory.actors)'>Сохранить</a>
+			<br/>
+			<a class="button" href="Index.html">Вернуться к списку</a>
+		</div>
 	</body>
 </html>

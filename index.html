@@ -11,11 +11,19 @@
 	<script src="js/controllers/movieController.js"></script>
     <title>Main Page</title>  
 </head>
-<body ng-controller="movieListController">
+<body>
 	<h2>Список фильмов</h2>
-	<div class="main-form">
+	<div ng-controller="movieCtrl">
+	</div>
+	
+	<div class="main-form" ng-controller="movieCtrl">
 		<div ng-repeat="item in list.items">
-			<p class="movie-item">{{item.movie}}, {{item.descr}}</p>
+			<img alt={{item.image}}></img>
+			<div class="movie-block">
+				<p>{{item.movie}}</p>
+				<p>{{item.descr}}</p>
+				<p>{{item.actors}}</p>
+			</div>
 			<a class="button" href="Edit.html">Редактировать</a>
 		</div>
 	</div>

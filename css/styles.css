@@ -21,9 +21,22 @@ h2{
 	margin:30px;
 	border:1px solid grey;
 }
-.button, .movie-item{
+img, .movie-block, .button{
 	display:inline-block;
 }
+.movie-block>p{
+	display:block;
+}
+img{
+	margin-right:10px;
+	border:1px solid black;
+}
+/*.button, img{
+	display:inline-block;
+}
+.movie-descr{
+	display:block;
+}*/
 .button{
 	margin:10px 15px;
 	background-color:#8B7355;
